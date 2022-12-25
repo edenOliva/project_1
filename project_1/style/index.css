@@ -1,0 +1,169 @@
+body {
+  background-image: url(assets/pinl_bord.webp);
+  color: #000;
+  font-size: medium;
+}
+
+#titleImg {
+  padding-top: 2rem;
+  margin: auto;
+  display: block;
+}
+
+#inputDateImg {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#doDate {
+  background: transparent;
+  border: none;
+  width: 14rem;
+  font-weight: bolder;
+  font-size: larger;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#doTime {
+  background: transparent;
+  border: none;
+  width: 8.5rem;
+  font-weight: bolder;
+  font-size: larger;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bubble {
+  margin-top: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background: linear-gradient(0deg, #10cea2 0%, #f377cc 100%);
+  color: #ffffff;
+  box-shadow: 7px 8px 9px 3px black;
+  width: 373px;
+  height: 200px;
+  border-radius: 100px;
+  color: #000;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #10cea2 transparent;
+  border-width: 18px 23px 0;
+  bottom: -18px;
+  left: 36%;
+  margin-left: -23px;
+}
+
+#txt {
+  background: transparent;
+  position: absolute;
+  left: 20%;
+  top: 5%;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+#submit {
+  position: absolute;
+  top: 83%;
+  left: 67%;
+  box-shadow: 0px 0px 0px 0px #3dc21b;
+  background-color: #c579f7;
+  border-radius: 42px;
+  border: 2px solid #ab197d;
+  display: inline-block;
+  cursor: pointer;
+  color: #030303;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 4px 9px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #eb6cc9;
+}
+
+#submit:hover {
+  background-color: #e05ec6;
+}
+
+#clearBtn {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  background-color: #5784f5;
+  border-radius: 42px;
+  border: 2px solid #0b0b0b;
+  display: inline-block;
+  cursor: pointer;
+  color: #030303;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 4px 9px;
+  text-decoration: none;
+}
+
+#clearBtn:hover {
+  background-color: #af0a0a;
+}
+/* -------------------------------------------- */
+
+.note {
+  background-color: lightskyblue;
+  font-size: larger;
+  font-family: "Caveat", cursive;
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  -moz-box-shadow: 5px 5px 7px #212121;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  text-align: center;
+  animation: fadeIn 2s;
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.noteBtn {
+  display: block;
+  float: left;
+  position: absolute;
+  display: none;
+}
+
+.note:hover .noteBtn {
+  display: block;
+  float: left;
+  position: absolute;
+}
